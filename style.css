@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+:root {
+    --richBlack: #0D1821;
+    --indigoDye: #344966;
+    --powdreBlue: #B4CDED;
+    --babyPowder: #F0F4EF;
+    --sage: #BFCC94;
+}
+
+body {
+    background-color: var(--powdreBlue);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+h1 {
+    font-size: 60px;
+    color: var(--richBlack);
+}
+
+span {
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-menu {
+    background-color: var(--indigoDye);
+    color: var(--babyPowder);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 170px;
+    font-family: "Black Ops One", serif;
+    text-align: center;
+    margin: 2px;
+}
+
+.button-menu:hover {
+    background-color: var(--richBlack);
+    color: var(--babyPowder);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button-menu:active {
+    background-color: var(--indigoDye);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button-menu-select{
+    background-color: var(--richBlack);
+}
+
+@media(max-width:768px) {
+    h1 {
+        font-size: 40px;
+    }
+    span{
+        font-size: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .button-menu {
+        width: 100%;
+    }
+}
+
+#reloj-display{
+    font-size: 50px;
+    align-items: start;
+}

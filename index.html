@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="content">
+            <h1>Reloj Digital <span>by RenzoDev</span></h1>
+        </div>
+        <nav class="content">
+            <button class="button-menu" id="reloj-button">Reloj</button>
+            <button class="button-menu" id="alarma-button">Alarma</button>
+            <button class="button-menu" id="temporizador-button">Temporizador</button>
+            <button class="button-menu" id="cronometro-button">Cronometro</button>
+        </nav>
+    </header>
+    <section id="reloj-section">
+        <div class="content">
+            <p id="reloj-display"></p>
+        </div>
+    </section>
+    <section id="alarma-section">
+        <div class="content">
+            <div>
+                <label for="input-alarm">Ingresar el tiempo:</label>
+                <input type="time" id="input-alarm" value="00:00">
+            </div>
+            <div>
+                <button class="button-menu" id="button-alarm-add" >Agregar</button>
+                <button class="button-menu" id="button-alarm-del" >Eliminar</button>
+            </div>
+            <div>
+                <p id="alarma-display"></p>
+            </div>
+        </div>
+    </section>
+    <section id="temporizador-section">
+        <div class="content">
+            <div >
+                <label for="input-term-hh" >Horas:</label>
+                <input id="input-term-hh" type="number" min="0" max="23" value="0">
+                <label for="input-term-mm" >Minutos:</label>
+                <input id="input-term-mm" type="number" min="0" max="59" value="0">
+                <label for="input-term-ss" >Segundos:</label>
+                <input id="input-term-ss" type="number" min="0" max="59" value="0">
+            </div>
+            <div>
+                <button class="button-menu" id="button-term-add" >Agregar</button>
+                <button class="button-menu" id="button-term-del" >Eliminar</button>
+                <button class="button-menu" id="button-term-sto" >Parar</button>
+                <button class="button-menu" id="button-term-res" >Continuar</button>
+            </div>
+            <div>
+                <p id="term-display"></p>
+            </div>
+        </div>
+    </section>
+    <section id="cronometro-section">
+        <div class="content">
+            <div>
+                <p id="crono-display"></p>
+            </div>
+            <div>
+                <button class="button-menu" id="button-crono-star">Iniciar</button>
+                <button class="button-menu" id="button-crono-stop">Parar</button>
+                <button class="button-menu" id="button-crono-dele">Eliminar</button>
+                <button class="button-menu" id="button-crono-reco">Registrar</button>
+                <button class="button-menu" id="button-crono-rest">Continuar</button>
+            </div>
+            <div id="list-crono-display">
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
